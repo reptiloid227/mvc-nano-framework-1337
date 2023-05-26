@@ -3,6 +3,7 @@
 namespace Routes;
 
 use App\Controllers\MainController;
+use App\Controllers\TestController;
 
 class Web
 {
@@ -11,6 +12,11 @@ class Web
             'methods' => [
                 'POST' => [MainController::class, 'save'],
                 'GET' => [MainController::class, 'index']
+            ]
+        ],
+        '/blog' => [
+            'methods' => [
+                'GET' => [TestController::class, 'blog']
             ]
         ],
     ];
