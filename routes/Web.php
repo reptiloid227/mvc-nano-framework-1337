@@ -33,9 +33,4 @@ class Web
         $controller->{$routeData[1]}();
     }
 
-    private function init($requestURI): void
-    {
-
-
-    }
 }

@@ -19,7 +19,7 @@ class StorageManager
     public static function init(string $storage): Storage
     {
         if (!in_array($storage, array_keys(self::$storages))) {
-            throw new Exception("Вы чо долбоеб? Обратитесь в поддержку для доолбеовбов");
+            throw new Exception("Неверный тип данных");
         }
 
         return new self::$storages[$storage];

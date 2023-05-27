@@ -20,6 +20,7 @@ class SQL implements Storage
 
     public function save(string $data): void
     {
+
         $this->connect
             ->query("INSERT INTO data (data) VALUES ('$data') ");
     }

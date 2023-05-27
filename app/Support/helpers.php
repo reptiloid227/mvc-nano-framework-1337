@@ -5,7 +5,7 @@ use JetBrains\PhpStorm\NoReturn;
 if (!function_exists("view")) {
     function view(string $path): void
     {
-        require_once APPLICATION . "/resources/views/" . $path. ".html";
+        require_once APPLICATION . "/resources/views/" . $path. ".php";
     }
 }
 
